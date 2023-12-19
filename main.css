@@ -1,0 +1,385 @@
+
+body{
+    background-color: rgb(88, 157, 93);
+}
+.Title{
+    background-color:с;
+    display: flex;
+    width: 100%;
+    height: 10%;;
+    justify-content: center;
+    }
+    .Main_Block{
+        display: flex;
+        flex-direction: column;
+    }
+    div.Menu  {
+        display: flex;
+        flex-direction: row;
+        background-color:rgb(240, 179, 238);
+        border-radius: 10px;
+        width: 100%;
+        min-height: 15vh;
+        justify-content: space-around;
+    }
+    input[type="range"]{
+        display: none;
+    }
+    div.MenueOfGroop {   
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        justify-content: space-around;
+    }
+    
+    div.item{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        justify-content: center;
+    }
+    p{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        text-align: center;
+    }
+    
+    .Content{
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(88, 157, 93);
+        justify-content: space-around;
+        align-items: center;
+        overflow:auto;
+    }
+
+    .ContentOfElement{
+        display: flex;
+        flex-direction: row;
+        background-color: lavender;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    
+    .Footer{
+        background-color: rgb(88, 157, 93);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h3{
+        text-align:start;
+        
+    }
+    hr{
+        width: 90%;
+        border: 1px black solid;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .mail{
+        display: flex;
+        flex-direction: row;
+        color: black;
+        margin: 0;
+    }
+    .mail::before{
+        content: "🖂";
+    }
+    .mark{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+   
+    .mark::before{
+        content: "©";
+    }
+    @media only screen and (max-width:700px)
+    {
+            .Main_Block{
+                flex-direction: column;
+            }
+            div.Menu  {
+                flex-direction: row;
+                width: 100%;
+                min-height: 15vh;
+                justify-content: space-around;
+            }
+            div.MenueOfGroop {   
+                flex-direction: column;
+                width: 40%;
+                justify-content: space-around;
+            }
+            .Wrapper{
+                display: none;
+            }
+            .wrapperCalories{
+                display: none;
+            }
+            div.item{
+                justify-content: center;
+            }
+            .Content{
+
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                overflow:auto;
+            }
+        
+            .ContentOfElement{
+                flex-direction: row;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            
+            .Info{
+                display: none;
+            }
+            
+            .Footer{
+                flex-direction: column;
+                width: 100%;
+        
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            h3{
+                display: none;
+                margin:0px 0px 5px 10px;
+            }
+            .contacts{
+                flex-direction: column;
+                margin: 0;
+            }
+            .mail{
+                flex-direction: row;
+                margin: 0;
+            }
+
+            .mark{
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+            }
+           
+            .mark::before{
+                content: "©";
+            }
+        
+    }
+    @media only screen and (min-width:701px) and (max-width:1199px){
+
+        div.Menu {
+            flex-direction: column;
+        }
+        .Wapper{
+            display: none;
+        }
+        
+        .wrapperCalories{
+            display: none;
+        }
+        div.MenueOfGroop {  
+            flex-direction: row;
+            width: 100%;
+        }
+        div.item{
+            width: 30%;
+        }
+        div.item:hover{
+            box-shadow:10px 5px 5px black; 
+        }
+        .Content{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .ContentOfElement{
+            border-radius: 10px;
+            flex-direction: column;
+            width: 30%;
+            height: 30%;
+        }
+        .ContentElement:hover{
+            box-shadow:5px 10px 10px black; 
+        }
+        img{
+            width: 90%;
+            height: 80%;
+            border-radius: 10px;
+        }
+        h3{
+            display: inline;
+            margin:0px 0px 5px 10px;
+        }
+        .Info{
+            display: none;
+        }
+        .Footer{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .mark{
+            justify-content: flex-end;
+            width: 45%;
+            order: 2;
+        }
+        .contacts{
+            width: 45%;
+        order: 1;
+        }
+        .mail{
+        order: 3;
+        }
+    }
+    @media only screen and (min-width:1200px ){
+        .Main_Block{
+            flex-direction: row;
+            
+        }
+        .Content{
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 85vh;
+            width: 85%;
+            order: 1;
+        }
+        div.Menu {
+            flex-direction: column;
+            width: 15%;
+            order: 2;
+            justify-content: flex-end;
+        }
+        .Wrapper{
+            width: 95vmin;
+            background-color: ffffff;
+            padding: 50px 40px 20px 40px;
+              
+          }
+    
+          .wrapperCalories{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+           justify-content: center;
+          }
+          .Container{
+              width: 100%;
+            height: 100px;
+          
+          }
+          input[type="range"]{
+            display: block;
+            appearance: none;
+            width: 14%;
+            position: absolute;
+            top: 0;
+            left: 85%;
+            bottom: 50%;
+            background-color: transparent;
+            pointer-events: none;
+          }
+          .sliderTrack{
+            width: 14.5%;
+            height: 5px;
+            background-color: lavender;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 84.9%;
+            bottom: 50%;
+            border-radius: 5px;
+          }
+          
+          input[type="range"]::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            height: 1em;
+            width: 1em;
+            background-color: #1fab12;
+            cursor: pointer;
+            border-radius: 10px;
+            pointer-events: auto;
+          } 
+          
+          input[type="range"]:active::-webkit-slider-thumb{
+            background-color: lightskyblue;
+            border: 3px solid lightseagreen;
+          }
+        div.MenueOfGroop { 
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 90%;
+            height: 40%;
+        }
+        div.item{
+            width: 80%;
+            margin: 25px;
+        }
+        div.item:hover{
+            box-shadow:5px 10px 10px black; 
+        }
+        .ContentOfElement{
+            flex-wrap: wrap;
+            width: 30%;
+        }
+
+        .ContentOfElement:hover{
+            box-shadow:5px 10px 10px black; 
+        }
+        img{
+            width: 45%;
+            height: 90%;
+            border-radius: 10px;
+            align-self:start;
+            margin: 10px 15px;
+        }
+        h3{
+            margin:0px 0px 5px 0px;
+            width: 42%;
+        }
+        .ImgAndName{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .Info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+        .calories{
+            width: 90%;
+            text-align: center;
+        }
+        .Footer{
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        .mark{
+
+            justify-content: flex-end;
+            width: 83%;
+            order: 3;
+        }
+        .contacts{
+            
+            order: 1;
+        }
+        .mail{
+        order: 2;
+        }
+    }
